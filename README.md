@@ -7,8 +7,8 @@ Apache Derby in-momery database
 ## Database Design
 
 Book
-  bookId       (Referring to primary key as IBSN number
-  book_title   (Title of book)
+  bookId       (Referring to primary key as ISBN number),
+  book_title   (Title of book),
   writer       (name of the writer)
   create_date  (first entry added in library system)
 
