@@ -2,8 +2,8 @@ package com.digicert.library.digicertlibraryservice.api;
 
 import java.util.Optional;
 
-import com.digicert.library.digicertlibraryservice.exception.BookNotFoundException;
 import com.digicert.library.digicertlibraryservice.db.BookDetailEntity;
+import com.digicert.library.digicertlibraryservice.exception.BookNotFoundException;
 import com.digicert.library.digicertlibraryservice.model.BookDetailAddRequest;
 import com.digicert.library.digicertlibraryservice.model.BookDetailUpdateRequest;
 

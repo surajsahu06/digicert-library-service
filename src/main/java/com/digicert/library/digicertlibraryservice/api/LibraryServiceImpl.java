@@ -7,9 +7,9 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.digicert.library.digicertlibraryservice.exception.BookNotFoundException;
 import com.digicert.library.digicertlibraryservice.db.BookDetailEntity;
 import com.digicert.library.digicertlibraryservice.db.BookDetailRepository;
+import com.digicert.library.digicertlibraryservice.exception.BookNotFoundException;
 import com.digicert.library.digicertlibraryservice.model.BookDetailAddRequest;
 import com.digicert.library.digicertlibraryservice.model.BookDetailUpdateRequest;
 
