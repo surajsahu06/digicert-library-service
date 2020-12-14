@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.digicert.library.digicertlibraryservice.BookNotFoundException;
+import com.digicert.library.digicertlibraryservice.exception.BookNotFoundException;
 import com.digicert.library.digicertlibraryservice.api.LibraryService;
 import com.digicert.library.digicertlibraryservice.db.BookDetailEntity;
 import com.digicert.library.digicertlibraryservice.model.BookDetailAddRequest;
