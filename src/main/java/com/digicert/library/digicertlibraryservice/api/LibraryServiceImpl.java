@@ -71,10 +71,10 @@ public class LibraryServiceImpl implements LibraryService {
       bookDetailEntity.setBookTitle(bookDetailUpdateRequest.getBookTitle());
       bookDetailEntity.setWriter(bookDetailUpdateRequest.getWriter());
       bookDetailRepository.save(bookDetailEntity);
-      log.info("updated the book detail for bookId={}", bookId);
+      log.info("Updated the book detail for bookId={}", bookId);
     }
     else {
-      throw new BookNotFoundException(String.format("BookId %s not found in System", bookId));
+      throw new BookNotFoundException(String.format("Book detail entry not found in system for BookId=%s", bookId));
     }
     return bookDetailEntity;
   }
