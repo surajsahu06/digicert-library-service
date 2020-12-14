@@ -1,8 +1,8 @@
 # Library System API Design
 
 ## Technology Used
-Spring Boot
-Apache Derby in-momery database
+Spring Boot,
+Apache Derby database
 
 ## Database Design
 
