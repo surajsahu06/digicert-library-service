@@ -30,6 +30,7 @@ public interface LibraryService {
 
   /**
    * Delete the book detail entry from table if present
+   *
    * @param bookId
    * @throws BookNotFoundException
    */
@@ -37,6 +38,7 @@ public interface LibraryService {
 
   /**
    * Update the existing entry in table by bookId
+   *
    * @param bookId
    * @param bookDetailUpdateRequest
    * @return
