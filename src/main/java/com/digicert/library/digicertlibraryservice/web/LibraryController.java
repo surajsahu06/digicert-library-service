@@ -69,9 +69,11 @@ public class LibraryController {
   public ResponseEntity deleteBookDetailEntry(@PathVariable("bookId") Integer bookId) {
     try {
       libraryService.deleteBookDetailEntry(bookId);
+      log.info("Book detail entry deleted from system for bookId={}", bookId);
     }
     catch (BookNotFoundException e) {
-      return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e);
+      String errorMessage = String.format("Book detail not found in system for BookId=%s", bookId);
+      return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorMessage);
     }
     return ResponseEntity.ok().build();
   }
