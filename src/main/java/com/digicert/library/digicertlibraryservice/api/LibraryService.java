@@ -23,10 +23,10 @@ public interface LibraryService {
    * This method will update the qty of book if the entry is already present in database table, else create the new
    * entry for the book
    *
-   * @param addBookRequest
+   * @param bookDetailAddRequest
    * @return
    */
-  BookDetailEntity createBookDetailEntry(BookDetailAddRequest addBookRequest);
+  BookDetailEntity createBookDetailEntry(BookDetailAddRequest bookDetailAddRequest);
 
   void deleteBookDetailEntry(Integer bookId) throws BookNotFoundException;
 

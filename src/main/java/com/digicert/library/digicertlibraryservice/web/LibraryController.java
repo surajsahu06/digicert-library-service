@@ -52,11 +52,11 @@ public class LibraryController {
 
   @PutMapping(value = "/update/{bookId}")
   public ResponseEntity updateBookDetailEntry(@PathVariable("bookId") Integer bookId,
-    @RequestBody BookDetailUpdateRequest updateBookDetailRequest) {
+    @RequestBody BookDetailUpdateRequest bookDetailUpdateRequest) {
     log.info("Request received to update the book detail for bookId={}", bookId);
     BookDetailEntity bookDetailEntry = null;
     try {
-      bookDetailEntry = libraryService.updateBookDetailEntry(bookId, updateBookDetailRequest);
+      bookDetailEntry = libraryService.updateBookDetailEntry(bookId, bookDetailUpdateRequest);
     }
     catch (BookNotFoundException e) {
       String errorMessage = String.format("BookId %s not found in system", bookId);
